@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="style.css"> <!-- Corrigido o atributo rel para stylesheet -->
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Contato</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Assunto:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="gender">Sexo:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Selecione o sexo</option>
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                    <option value="other">Outro</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Tipo de contato:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="contact-type" value="phone"> Telefone</label>
+                    <label><input type="radio" name="contact-type" value="email"> Email</label>
+                    <label><input type="radio" name="contact-type" value="other"> Outro</label>
+                </div>
+            </div>
+            
+            
